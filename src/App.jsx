@@ -1,10 +1,13 @@
-import react from "react"
-import NavBar from "./NavBar"
+import react from "react";
+import './App.css'; 
+import NavBar from "./NavBar";
+
 
 const App = () => {
   return (
     <div>
       <NavBar/>
+      
     </div>
   );
 }

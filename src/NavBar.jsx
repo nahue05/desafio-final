@@ -1,7 +1,10 @@
 
 
-import './App.css';
+
 import react from "react"
+import './App.css';
+import Buscador from "./Buscador"
+import Navegacion from "./Navegacion";
 const NavBar = ({NavBar}) =>{
     return (
     <>
@@ -12,20 +15,12 @@ const NavBar = ({NavBar}) =>{
             <span className="navbar-toggler-icon" />
             </button>
             <div className="collapse navbar-collapse" id="navbarColor01">
-            <ul className="navbar-nav me-auto">
+                <Navegacion/>
+                <div className="bolsa">
+                <ion-icon  name="basket"></ion-icon>
+                </div>
                 
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Bebidas</a>
-                </li>
-                
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Menú</a>
-                </li>
-
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Acompañamientos</a>
-                </li>
-                </ul>
+                <Buscador contBuscar="Ayuda"/>
             </div>
         </div>
         </nav>
