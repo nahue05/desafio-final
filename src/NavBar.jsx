@@ -1,11 +1,10 @@
 
-
-
 import react from "react"
 import './App.css';
 import Buscador from "./Buscador"
 import Navegacion from "./Navegacion";
-const NavBar = ({NavBar}) =>{
+import CartWidget from "./CartWidget";
+const NavBar = () =>{
     return (
     <>
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -17,9 +16,8 @@ const NavBar = ({NavBar}) =>{
             <div className="collapse navbar-collapse" id="navbarColor01">
                 <Navegacion/>
                 <div className="bolsa">
-                <ion-icon  name="basket"></ion-icon>
+                <CartWidget/>
                 </div>
-                
                 <Buscador contBuscar="Ayuda"/>
             </div>
         </div>
