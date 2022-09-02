@@ -1,11 +1,55 @@
+body{
+background-image: url(https://cdn2.vectorstock.com/i/thumb-large/25/26/fast-food-vector-14142526.jpg);
+}
+
 .bolsa{
     padding-right: 20px;
     padding-top: 8px;
 }
 
 .counter-box{
-    width: 30%;
-    background-color: rgba(183, 50, 50, 0.209);
     text-align: center;
-    border-radius: 15px;
+    text-align: center;
+    padding-top:5px ;
+    font-weight:bold ;
+}
+
+.cardContent{
+    display: inline-block;
+    padding-top:20px;
+    padding-left: 100px;
+    
+}
+
+.card{
+    border-radius: 25px;
+    background-color: black;
+    
+}
+
+.imagenCard{
+    border-radius: 25px;
+    width: 500px;
+    height: 300px;  
+}
+
+
+.tituloCard{
+    text-align: center;
+    padding-top:5px ;
+    font-weight:bold ;
+    font-size: larger;
+    
+}
+
+.precioCard{
+    text-align: center;
+    padding-top:5px ;
+    font-weight:bold ;
+}
+
+.cantidadCard{
+    text-align: center;
+    padding-top:5px ;
+    font-weight:bold ;
 }

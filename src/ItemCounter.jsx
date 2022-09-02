@@ -1,14 +1,13 @@
 import {useState} from 'react';
 import './App.css';
 
-const ItemCounter = ({stock, onAdd}) => {
+const ItemCounter = ({maximo, onAdd}) => {
     const [ItemCounter, setItemCounter] = useState(1)
 
     function add(){
-        if (ItemCounter < stock){
+        if(ItemCounter < maximo){
             setItemCounter(ItemCounter + 1)
         }
-        
     }
     function substract(){
         if (ItemCounter > 1){
@@ -24,8 +23,7 @@ const ItemCounter = ({stock, onAdd}) => {
     return (
         <>
             <div className="counter-box">
-            <h1>Contador</h1>
-            <p>Stock: {stock}</p>
+            
             <p>cantidad: {ItemCounter}</p>
 
             <div>
