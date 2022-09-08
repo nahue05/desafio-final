@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css'; 
-export const Item = ({id, img, nombre, precio})=>{
+import ItemCounter from 'ItemCounter'
+export const Detail = ({id, img, nombre, precio, maximo})=>{
+    function onAdd (ItemCounter)
+
     return(
 
 <div key={id} className='cardContent'>
@@ -8,9 +11,9 @@ export const Item = ({id, img, nombre, precio})=>{
                     <img src={img} className='imagenCard'/>
                     <p className='tituloCard'>{nombre}</p>
                     <p className='precioCard'>Precio: ${precio}</p>
+                    <ItemCounter maximo={maximo} onAdd={onAdd}/>
             </div>
-            
         </div>
     )
 }
-export default Item;
+export default Detail;
