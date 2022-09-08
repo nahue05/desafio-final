@@ -1,16 +1,17 @@
 import React from 'react';
 
-export const item = ({nombre,img,precio,id})=>{
+export const Item = ({id, img, nombre, precio})=>{
     return(
 
         
-<div key={item.id} className='cardContent'>
+<div key={id} className='cardContent'>
                 <div className='card'>
-                    <img src={item.img} className='imagenCard'/>
-                    <p className='tituloCard'>{item.nombre}</p>
-                    <p className='precioCard'>Precio: ${item.precio}</p>
+                    <img src={img} className='imagenCard'/>
+                    <p className='tituloCard'>{nombre}</p>
+                    <p className='precioCard'>Precio: ${precio}</p>
                 </div>
             
         </div>
     )
 }
+export default Item;
