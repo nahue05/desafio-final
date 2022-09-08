@@ -1,12 +1,22 @@
 import React from 'react';
-import { Item } from './Item';
+import './App.css'; 
+import ItemCounter from './ItemCounter'
+export const ItemDetails = ({data})=>{
+    function onAdd (ItemCounter){}
+        
+    
 
-export const ItemDetail=({productos})=>{
-return(
-    <div>
-        {productos.map((unProducto)=> <ItemDetail key={unProducto.id} nombre={unProducto.nombre} precio={unProducto.precio} img={unProducto.img} maximo={unProducto.maximo}/>)}
-    </div>
-)
+    return(
+
+<div key={data.id} className='detailContent'>
+            <div className='cardDetail'>
+                    <img src={data.img} className='imagenDetail'/>
+                    <p className='parrafoDetail'>{data.nombre}</p>
+                    <p className='parrafoDetail'>Precio: ${data.precio}</p>
+                    <ItemCounter maximo={data.maximo} onAdd={onAdd}/>
+                    
+            </div>
+        </div>
+    )
 }
-
-export default ItemDetail;
+export default ItemDetails;

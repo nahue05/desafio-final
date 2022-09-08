@@ -1,16 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import ItemList from './ItemList';
+import Productos from './data'
 import './App.css'; 
 const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([])
-    
-    useEffect(()=>{
-        fetch('./data/data.json')
-        .then(res => res.json())
-        .then(data => setProductos(data.productos))
-        .catch(err => console.log(err))
-    }, [])
+    const getData = () => {
+        return new Promise(res =>{
+            setTimeout(() => {
+                res(Productos)
+            }, 1500);
+        })
+    }
+
+    useEffect(() => {
+        getData().then(dataProductos => setProductos(dataProductos))
+    }, []);
 
 
 

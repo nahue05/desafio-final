@@ -1,4 +1,4 @@
-{"productos":[
+export const Productos = [
     {
     "id":1,
     "nombre":"Papas Fritas", 
@@ -27,4 +27,5 @@
     "img":"https://st4.depositphotos.com/36668420/39056/i/600/depositphotos_390569198-stock-photo-glass-of-sprite-soda-water.jpg", 
     "maximo":"6"}
     ]
-}
+
+    export default Productos

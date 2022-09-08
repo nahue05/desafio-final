@@ -8,6 +8,7 @@ export const Item = ({id, img, nombre, precio})=>{
                     <img src={img} className='imagenCard'/>
                     <p className='tituloCard'>{nombre}</p>
                     <p className='precioCard'>Precio: ${precio}</p>
+                    <button className='botonCard'>Ver Más</button>
             </div>
             
         </div>

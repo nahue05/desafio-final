@@ -52,3 +52,38 @@ background-image: url(https://cdn2.vectorstock.com/i/thumb-large/25/26/fast-food
     padding-top:5px ;
     font-weight:bold ;
 }
+.botonCard{
+border-radius: 10px;
+background-color: rgb(78, 67, 4);
+}
+.boton{
+    margin:20px;
+    width:30% ;
+    border-radius: 15px;
+    background-color: rgb(95, 151, 201)
+}
+
+.detailContent{
+    
+    padding-top:25px;
+    display: flex;
+    justify-content: center;
+    padding-bottom:25px ;
+}
+
+.cardDetail{
+    background-color: black;
+    border-radius: 25px;
+}
+
+.imagenDetail{
+    border-radius: 25px;
+    width: 1150px;
+    height: 600px; 
+}
+
+.parrafoDetail{
+    text-align: center;
+    padding-top:5px ;
+    font-weight:bold ;
+}

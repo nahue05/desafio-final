@@ -32,7 +32,7 @@ const ItemCounter = ({maximo, onAdd}) => {
                 <button className="btn" onClick={add}>+</button>
             </div>
             <div>
-            <button className="btn" onClick={()=> onAdd(ItemCounter)}>Confirmar</button>
+            <button className="boton" onClick={()=> onAdd(ItemCounter)}>Agregar a la bolsa</button>
             </div>
             </div>
         </>
