@@ -17,7 +17,7 @@ background-image: url(https://cdn2.vectorstock.com/i/thumb-large/25/26/fast-food
     display: inline-block;
     padding-top:20px;
     padding-left: 100px;
-    
+    padding-bottom: 20px;
 }
 
 .card{
@@ -61,6 +61,12 @@ background-color: rgb(78, 67, 4);
     width:30% ;
     border-radius: 15px;
     background-color: rgb(95, 151, 201)
+}
+.linkCard{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    
 }
 
 .detailContent{
