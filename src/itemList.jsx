@@ -4,7 +4,7 @@ import { Item } from './Item';
 export const ItemList=({productos})=>{
 return(
     <div>
-        {productos.map((unProducto)=> <Item key={unProducto.id} nombre={unProducto.nombre} precio={unProducto.precio} img={unProducto.img}/>)}
+        {productos.map((unProducto)=> <Item key={unProducto.id} nombre={unProducto.nombre} id={unProducto.id}precio={unProducto.precio} categoria={unProducto.categoria}img={unProducto.img}/>)}
     </div>
 )
 }

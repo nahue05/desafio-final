@@ -2,8 +2,10 @@ import React from 'react';
 import './App.css'; 
 import ItemCounter from './ItemCounter'
 export const ItemDetails = ({data})=>{
-    function onAdd (ItemCounter){}
-        
+    
+    function agregarAlCarrito(data){
+        console.log(data);
+    }
     
 
     return(
@@ -13,7 +15,7 @@ export const ItemDetails = ({data})=>{
                     <img src={data.img} className='imagenDetail'/>
                     <p className='parrafoDetail'>{data.nombre}</p>
                     <p className='parrafoDetail'>Precio: ${data.precio}</p>
-                    <ItemCounter maximo={data.maximo} onAdd={onAdd}/>
+                    <ItemCounter maximo={data.maximo} />
                     
             </div>
         </div>

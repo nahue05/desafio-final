@@ -1,7 +1,8 @@
 import {useState} from 'react';
 import './App.css';
+import Productos from './data';
 
-const ItemCounter = ({maximo, onAdd}) => {
+const ItemCounter = ({maximo, Productos}) => {
     const [ItemCounter, setItemCounter] = useState(1)
 
     function add(){
@@ -19,6 +20,7 @@ const ItemCounter = ({maximo, onAdd}) => {
         setItemCounter(1)
     }
 
+    
 
     return (
         <>
@@ -32,7 +34,7 @@ const ItemCounter = ({maximo, onAdd}) => {
                 <button className="btn" onClick={add}>+</button>
             </div>
             <div>
-            <button className="boton" onClick={()=> onAdd(ItemCounter)}>Agregar a la bolsa</button>
+            <button className="boton" onClick={()=> agregarAlCarrito(data)}>Agregar a la bolsa</button>
             </div>
             </div>
         </>
