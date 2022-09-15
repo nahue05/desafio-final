@@ -1,23 +1,24 @@
 import {useState} from 'react';
 import './App.css';
 import Productos from './data';
+import Item from './Item';
 
-const ItemCounter = ({maximo, Productos}) => {
-    const [ItemCounter, setItemCounter] = useState(1)
+const ItemCounter = ({maximo, onAdd, id}) => {
+    const [cantidad, setCantidad] = useState(1)
 
     function add(){
-        if(ItemCounter < maximo){
-            setItemCounter(ItemCounter + 1)
+        if(cantidad < maximo){
+            setCantidad(cantidad + 1)
         }
     }
     function substract(){
-        if (ItemCounter > 1){
-            setItemCounter(ItemCounter - 1)
+        if (cantidad > 1){
+            setCantidad(cantidad - 1)
         }
         
     }
     function reset(){
-        setItemCounter(1)
+        setCantidad(1)
     }
 
     
@@ -26,7 +27,7 @@ const ItemCounter = ({maximo, Productos}) => {
         <>
             <div className="counter-box">
             
-            <p>cantidad: {ItemCounter}</p>
+            <p>cantidad: {cantidad}</p>
 
             <div>
                 <button className="btn" onClick={substract}>-</button>
@@ -34,7 +35,7 @@ const ItemCounter = ({maximo, Productos}) => {
                 <button className="btn" onClick={add}>+</button>
             </div>
             <div>
-            <button className="boton" onClick={()=> agregarAlCarrito(data)}>Agregar a la bolsa</button>
+            <button className="boton" onClick={()=> onAdd(id, cantidad)}>Agregar a la bolsa</button>
             </div>
             </div>
         </>

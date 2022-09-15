@@ -12,7 +12,7 @@ export const Productos = [
     "nombre":"Hamburguesa", 
     "precio":"230", 
     "img":"https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/FJKXKQKMMJBV7KQ7XQ3YNFO7LU.jpg", 
-    "maximo":"6",
+    "maximo":"10",
     "categoria":"menu"
     },
     {
@@ -20,7 +20,7 @@ export const Productos = [
     "nombre":"Refresco cola", 
     "precio":"90", 
     "img":"https://t2.uc.ltmcdn.com/es/posts/1/7/9/cuanto_engorda_la_coca_cola_descubre_aqui_la_respuesta_45971_600.jpg", 
-    "maximo":"6",
+    "maximo":"10",
     "categoria":"bebidas"
     },
     {
@@ -28,7 +28,7 @@ export const Productos = [
     "nombre":"Refresco sprite", 
     "precio":"90", 
     "img":"https://st4.depositphotos.com/36668420/39056/i/600/depositphotos_390569198-stock-photo-glass-of-sprite-soda-water.jpg", 
-    "maximo":"6",
+    "maximo":"10",
     "categoria":"bebidas"
     }
 ]

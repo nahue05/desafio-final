@@ -1,10 +1,16 @@
-import React from 'react';
+import React,  { useState } from 'react';
 import './App.css'; 
 import ItemCounter from './ItemCounter'
-export const ItemDetails = ({data})=>{
+import { Link } from 'react-router-dom';
+export const ItemDetails = ({data, cantidad})=>{
     
-    function agregarAlCarrito(data){
-        console.log(data);
+
+    const [show, setShow] = useState(false);
+
+    function agregarAlCarrito(data,cantidad){
+        setShow(true)
+        const productoCarrito ={id: data, cantidad: cantidad}
+        console.log(productoCarrito)
     }
     
 
@@ -15,10 +21,15 @@ export const ItemDetails = ({data})=>{
                     <img src={data.img} className='imagenDetail'/>
                     <p className='parrafoDetail'>{data.nombre}</p>
                     <p className='parrafoDetail'>Precio: ${data.precio}</p>
-                    <ItemCounter maximo={data.maximo} />
                     
+                    {show ? (<Link to="/cart" className="btn btnDetail btn-primary" type="button">
+                Ver Bolsa
+                </Link>
+                ) : <ItemCounter maximo={data.maximo} id={data.id} cantidad={cantidad} onAdd={agregarAlCarrito} /> 
+                }
+                </div>
             </div>
-        </div>
+        
     )
 }
 export default ItemDetails;

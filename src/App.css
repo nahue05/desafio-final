@@ -76,10 +76,15 @@ background-color: rgb(78, 67, 4);
     justify-content: center;
     padding-bottom:25px ;
 }
-
+.btnDetail{
+    display: flex;
+    justify-content: center;
+    
+}
 .cardDetail{
     background-color: black;
     border-radius: 25px;
+    align-items: center;
 }
 
 .imagenDetail{
