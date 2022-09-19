@@ -2,15 +2,15 @@ import React,  { useState } from 'react';
 import './App.css'; 
 import ItemCounter from './ItemCounter'
 import { Link } from 'react-router-dom';
+import { useCartContext } from './CartContext';
 export const ItemDetails = ({data, cantidad})=>{
-    
-
     const [show, setShow] = useState(false);
 
-    function agregarAlCarrito(data,cantidad){
+    const { addItem} = useCartContext ()
+
+    const onAdd = (cantidad) =>{
         setShow(true)
-        const productoCarrito ={id: data, cantidad: cantidad}
-        console.log(productoCarrito)
+        addItem(data,cantidad);
     }
     
 
@@ -25,7 +25,7 @@ export const ItemDetails = ({data, cantidad})=>{
                     {show ? (<Link to="/cart" className="btn btnDetail btn-primary" type="button">
                 Ver Bolsa
                 </Link>
-                ) : <ItemCounter maximo={data.maximo} id={data.id} cantidad={cantidad} onAdd={agregarAlCarrito} /> 
+                ) : <ItemCounter maximo={data.maximo} id={data.id} cantidad={cantidad} onClick={onAdd} /> 
                 }
                 </div>
             </div>

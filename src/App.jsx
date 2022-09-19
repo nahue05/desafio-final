@@ -4,18 +4,19 @@ import './App.css';
 import NavBar from "./NavBar";
 import ItemListContainer from "./ItemListContainer";
 import ItemDetailContainer from './ItemDetailContainer'
+import { CartProvider } from './CartContext';
 
 const App = () => {
   return (
     <BrowserRouter>
-    <div>
+    <CartProvider>
     <NavBar/>
       <Routes>
         <Route path='/' element={<ItemListContainer/>}  />
         <Route path='/categoria/:categoria' element={<ItemListContainer/> } />
         <Route path='/detalles/:id' element={<ItemDetailContainer/>} />
       </Routes>
-    </div>
+      </CartProvider>
     </BrowserRouter>
   );
 }

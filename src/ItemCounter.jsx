@@ -3,7 +3,7 @@ import './App.css';
 import Productos from './data';
 import Item from './Item';
 
-const ItemCounter = ({maximo, onAdd, id}) => {
+const ItemCounter = ({maximo, onClick, id}) => {
     const [cantidad, setCantidad] = useState(1)
 
     function add(){
@@ -35,7 +35,7 @@ const ItemCounter = ({maximo, onAdd, id}) => {
                 <button className="btn" onClick={add}>+</button>
             </div>
             <div>
-            <button className="boton" onClick={()=> onAdd(id, cantidad)}>Agregar a la bolsa</button>
+            <button className="boton" onClick={()=> onClick(cantidad)}>Agregar a la bolsa</button>
             </div>
             </div>
         </>
