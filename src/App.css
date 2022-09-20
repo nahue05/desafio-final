@@ -5,6 +5,7 @@ background-image: url(https://cdn2.vectorstock.com/i/thumb-large/25/26/fast-food
 .bolsa{
     padding-right: 20px;
     padding-top: 8px;
+    
 }
 
 .counter-box{
@@ -97,4 +98,37 @@ background-color: rgb(78, 67, 4);
     text-align: center;
     padding-top:5px ;
     font-weight:bold ;
+}
+
+.cartContainer{
+    background-color: rgba(8, 142, 142, 0.705);
+    width: 100%;
+    height: auto;
+    border-bottom: solid;
+}
+.tituloCart{
+    padding-left: 92px;
+    font-size: 50px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imgCart{
+    width: 25%;
+    height: 50%;
+    padding-left: 10px;
+    border-radius:15px ;
+}
+.precioCart{
+    padding-left: 10px;
+    font-size: 35px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.botonCart{
+    margin:20px;
+    width:15% ;
+    border-radius: 15px;
+    background-color: rgb(95, 151, 201)
 }

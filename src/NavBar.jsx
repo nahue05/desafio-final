@@ -17,9 +17,7 @@ const NavBar = () =>{
             <div className="collapse navbar-collapse" id="navbarColor01">
                 <Navegacion/>
                 <div className="bolsa">
-                
                 <CartWidget/>
-                
                 </div>
                 <Buscador contBuscar="Ayuda"/>
             </div>
