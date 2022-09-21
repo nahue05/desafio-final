@@ -7,7 +7,7 @@ const CartWidget = () => {
     return cart.length > 0 ? (
         
             <Link to='/cart'>
-            <ion-icon  size="large" name="basket"></ion-icon>
+            <ion-icon  color="dark"size="large" name="basket"></ion-icon>
             <span className='cantidad'>{getCantidad()}</span>
             </Link>
 
