@@ -22,7 +22,9 @@ const CartView =() =>{
             }
             <div>
                 <h4 className="precioCart">Precio Total:$ {getTotal()} </h4>
-                <button className="botonCart">Confirmar compras</button>            
+                <Link to='/checkout'>
+                <button className="botonCart">Confirmar compras</button>  
+                </Link>          
             </div>
             </div>
     ) : (
