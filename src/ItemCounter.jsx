@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import './App.css';
-import Productos from './data';
+
 import Item from './Item';
 
 const ItemCounter = ({maximo, onClick, id}) => {
